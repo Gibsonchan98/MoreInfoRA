@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/opal"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/placementView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/rectangular_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:hint="Placement"
+        android:textColorHint="@color/charcoal"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/conditionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/rectangular_bg"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:hint="Condition"
+        android:textColorHint="@color/charcoal"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/placementView"
+        app:layout_constraintStart_toStartOf="@+id/placementView"
+        app:layout_constraintTop_toBottomOf="@+id/placementView" />
+
+    <EditText
+        android:id="@+id/speciesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/rectangular_bg"
+        android:ems="10"
+        android:hint="Species"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        android:textColorHint="@color/charcoal"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/conditionView"
+        app:layout_constraintStart_toStartOf="@+id/conditionView"
+        app:layout_constraintTop_toBottomOf="@+id/conditionView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitBtn"
+        android:layout_width="144dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="64dp"
+        android:text="Submit"
+        android:textColor="@color/platinum"
+        android:background="@drawable/rectangular_bg"
+        android:backgroundTint="@color/chestnut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placementSpinner" />
+
+    <Spinner
+        android:id="@+id/placementSpinner"
+        android:layout_width="206dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/rectangular_bg"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/speciesView"
+        app:layout_constraintStart_toStartOf="@+id/speciesView"
+        app:layout_constraintTop_toBottomOf="@+id/speciesView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

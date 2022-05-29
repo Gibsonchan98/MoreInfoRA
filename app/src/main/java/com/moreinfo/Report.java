@@ -2,10 +2,14 @@ package com.moreinfo;
 
 public class Report {
 
-    private String placement, condition;
+    private String placement, condition, species, location;
+    Boolean safe;
 
     public Report(){
 
+    }
+    public Report(String placement){
+        this.placement = placement;
     }
     //Information needed for simple report
     public Report(String species,String location,Boolean safe){

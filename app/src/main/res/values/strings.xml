@@ -13,4 +13,12 @@
         <item>Dormant</item>
         <item>Tangled</item>
     </string-array>
+
+    <string-array name="species_array">
+        <item>Penguin</item>
+        <item>Whale</item>
+        <item>Dolphin</item>
+        <item>Sea Lion</item>
+        <item>Seal</item>
+    </string-array>
 </resources>

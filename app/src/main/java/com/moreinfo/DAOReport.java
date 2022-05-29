@@ -10,6 +10,7 @@ public class DAOReport {
 
     private DatabaseReference dbReference;
 
+
     public DAOReport(){
         FirebaseDatabase dbRootNode = FirebaseDatabase.getInstance();
         //Reference is making "Report" node as root

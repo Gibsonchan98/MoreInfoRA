@@ -12,6 +12,7 @@
         android:id="@+id/btn_submit"
         android:layout_width="144dp"
         android:layout_height="61dp"
+        android:layout_marginTop="88dp"
         android:background="@drawable/rectangular_bg"
         android:backgroundTint="@color/chestnut"
         android:text="Submit"
@@ -19,43 +20,70 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="595dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_media" />
 
     <Spinner
         android:id="@+id/spinner_placement"
         android:layout_width="240dp"
         android:layout_height="50dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/rectangular_bg"
         android:paddingLeft="20dp"
         android:paddingTop="13dp"
         android:paddingRight="20dp"
         android:paddingBottom="13dp"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="192dp" />
+        app:layout_constraintEnd_toEndOf="@+id/spinner_species"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner_species"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_species" />
 
     <Spinner
         android:id="@+id/spinner_species"
         android:layout_width="240dp"
         android:layout_height="50dp"
+        android:layout_marginTop="84dp"
         android:background="@drawable/rectangular_bg"
         android:paddingLeft="20dp"
         android:paddingTop="13dp"
         android:paddingRight="20dp"
         android:paddingBottom="13dp"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="90dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/spinner_condition"
         android:layout_width="240dp"
         android:layout_height="50dp"
-        android:layout_marginTop="292dp"
+        android:layout_marginTop="72dp"
         android:background="@drawable/rectangular_bg"
         android:paddingLeft="20dp"
         android:paddingTop="13dp"
         android:paddingRight="20dp"
         android:paddingBottom="13dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="85dp" />
+
+        app:layout_constraintEnd_toEndOf="@+id/spinner_placement"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner_placement"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_placement" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_media"
+        android:layout_width="144dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="72dp"
+        android:text="Upload Media"
+        android:background="@drawable/rectangular_bg"
+        android:backgroundTint="@color/chestnut"
+        android:textColor="@color/platinum"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_condition"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/spinner_condition"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_condition" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

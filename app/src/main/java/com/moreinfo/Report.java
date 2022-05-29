@@ -1,38 +1,35 @@
 package com.moreinfo;
 
+import java.util.List;
+
 public class Report {
 
-    private String placement, condition, species, location;
+    private String status;
+    private int reportID, longitute, lattitude, animalQuantity;
+    private List<Animal> animalList;
     Boolean safe;
 
     public Report(){
-
     }
-    public Report(String placement){
-        this.placement = placement;
+
+    //testing constructor
+    public Report(String placement, String condition, String species){
+        //create animal object
+        animalList.add(new Animal(species,placement,condition));
     }
     //Information needed for simple report
     public Report(String species,String location,Boolean safe){
+        Animal animal = new Animal(species,safe);
     }
 
     //More info report
-    public Report(String species,String location,Boolean safe,String condition, String placement){
+    public Report(String species,String location,Boolean safe,String condition, String placement){}
 
+    public Boolean getSafe() {
+        return safe;
     }
 
-    public String getPlacement(){
-        return placement;
-    }
-
-    public String getCondition(){
-        return condition;
-    }
-
-    public void setPlacement(String placement){
-        this.placement = placement;
-    }
-
-    public void setCondition(String condition){
-        this.condition = condition;
+    public void setSafe(Boolean safe) {
+        this.safe = safe;
     }
 }
